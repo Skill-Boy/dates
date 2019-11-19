@@ -5,10 +5,6 @@ class Contact
     @contacts = contacts
   end
 
-  @contacts = [{age: 20, name: "Jose",   last_name: "Lopez",   gender: :masculino},
-               {age: 21, name: "Oscar",  last_name: "Perez",   gender: :masculino},
-               {age: 22, name: "Martha", last_name: "Sanchez", gender: :femenino}]  
-    
   def all_contacts
     @contacts    
   end
@@ -23,8 +19,8 @@ class Contact
 end
 
 contacts = [{age: 20, name: "Jose", last_name: "Lopez", gender: :masculino},
-    {age: 21, name: "Oscar",  last_name: "Perez",   gender: :masculino},
-    {age: 22, name: "Martha", last_name: "Sanchez", gender: :femenino}]  
+            {age: 21, name: "Oscar", last_name: "Perez", gender: :masculino},
+            {age: 22, name: "Martha", last_name: "Sanchez", gender: :femenino}]  
 contact = Contact.new(contacts)
-contact.all_contacts
+#contact.all_contacts
 contact.find_by("last_name", "Lopez")
