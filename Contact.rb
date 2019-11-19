@@ -1,8 +1,10 @@
 class Contact
   def self.all
-    [{age: 20, name: "Jose", last_name: "Lopez", gender: :masculino},
+    [
+    {age: 20, name: "Jose", last_name: "Lopez", gender: :masculino},
     {age: 21, name: "Oscar", last_name: "Perez", gender: :masculino},
-    {age: 22, name: "Martha", last_name: "Sanchez", gender: :femenino}]      
+    {age: 22, name: "Martha", last_name: "Sanchez", gender: :femenino}
+    ]      
   end
 
   def self.find_by(key, value)
