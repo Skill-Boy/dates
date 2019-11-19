@@ -15,10 +15,11 @@ class Contact
 
   def find_by(key, value)
     contacts.each do |hashes|
-      return hashes
+      if hashes[key.to_sym] == value
+        return hashes
+      end  
     end
-  end  
-          
+  end         
 end
 
 contacts = [{age: 20, name: "Jose", last_name: "Lopez", gender: :masculino},
