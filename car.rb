@@ -15,18 +15,14 @@ class Car
   end
   
   def travel_start
-    begin
-      self.init_travel = true 
-    raise "Init first on car" if !on_car
+    self.init_travel = true 
+    raise "Init first on car" unless on_car
       "Starting travel"
-    end
   end 
   
   def travel_end
-    begin
-    raise "Init first travel start" if !init_travel
+    raise "Init first travel start" unless init_travel
       "Finish travel" 
-    end
   end
 end 
   
